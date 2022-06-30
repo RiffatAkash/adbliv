@@ -1,0 +1,117 @@
+*{
+    padding:0;
+    margin:0;
+    -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#container{
+    width: 300px;
+    height: 250px;
+    top:0;
+    left:0;
+    perspective: 1500px;
+    overflow: hidden;
+    cursor: pointer;
+    /*background-color: #000;*/
+    background: url('img/bg.jpg');
+    background-repeat: no-repeat;
+
+}
+.element_1{
+    width: 107px;
+    height: 29px;
+    position: absolute;
+    top: 215px;
+    left: 97px;
+}
+.element_2{
+    width: 111px;
+    height: 27px;
+    position: absolute;
+    top: 12px;
+    left: 13px;
+}
+.element_3{
+    width: 69px;
+    height: 21px;
+    position: absolute;
+    top: 15px;
+    left: 220px;
+}
+.slide{
+    overflow: hidden;
+}
+.slide img{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.slide .right_woman{
+    left: 46px;
+}
+.slide .left_man{
+    left: auto;
+    right: 25px;
+}
+.navigation{
+    display: none;
+}
+.controls{
+    top: 27% !important;
+    opacity: 0;
+}
+#invis{
+    width: 300px;
+    height: 200px;
+    background-color: brown;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+}
+#video{
+    /*background: #000;*/
+    width: 300px;
+    height: 168px;
+    left: 0px;
+    position: relative;
+    top: 42px;
+}
+.video-controls{
+    top:44px;
+    position: relative;
+    padding-left: 17px;
+    padding-right: 17px;
+}
+.sound{
+    float: right;
+    background: none;
+    color: #F5D7BA;
+    border: none;
+    outline: none;
+}
+.toggle{
+    background: none;
+    color: #F5D7BA;
+    border: none;
+    outline: none;
+}
+/*side background color*/
+@keyframes pulse {
+        0% {
+            transform: scaleX(1)
+        }
+        50% {
+            transform: scale3d(.90, .90, .90)
+        }
+        to {
+            transform: scaleX(1)
+        }
+ }
+
+.pulse {
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
